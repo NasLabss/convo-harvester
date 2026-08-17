@@ -1,0 +1,16 @@
+{
+  "_comment": "Copy this file to config.json and adapt it. path=null => auto-detection. path='C:/...' => forced path. enabled=false => tool ignored.",
+
+  "output_dir": "harvest_output",
+
+  "tools": {
+    "opencode":    { "enabled": true,  "path": null },
+    "antigravity": { "enabled": true,  "path": null },
+    "zcode":       { "enabled": true,  "path": null },
+
+    "claudecode":  { "enabled": false, "path": null },
+    "codex":       { "enabled": false, "path": null },
+    "cursor":      { "enabled": false, "path": null },
+    "cline":       { "enabled": false, "path": null }
+  }
+}

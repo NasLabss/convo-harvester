@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convo-harvester"
+version = "1.0.0"
+description = "Collects conversations from local AI agents (opencode, Antigravity, zcode, Claude Code, Codex, Cursor, Cline) and writes them as incremental Markdown, with automatic secret redaction. Standard library only."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["ai", "conversations", "sanitize", "privacy", "backup", "harvest", "markdown"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+convo-harvester = "convo_harvester.cli:main"
+
+[tool.setuptools]
+packages = ["convo_harvester"]

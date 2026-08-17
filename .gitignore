@@ -1,0 +1,22 @@
+# Sortie du harvester (conversations privées — ne jamais committer/partager)
+harvest_output/
+*/harvest_output/
+dumps/
+
+# Config locale (chemins propres à la machine)
+config.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Environnement virtuel
+.venv/
+venv/
+
+# Artefacts de packaging / tests
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+uv.lock
